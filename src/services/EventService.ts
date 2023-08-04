@@ -4,8 +4,8 @@ import axios from "axios";
 import * as functions from 'firebase-functions';
 
 const apiClient: AxiosInstance = axios.create({
-    baseURL: functions.config().vite.backend_url,
-    withCredentials: false, // This is the default
+    baseURL: 'https://my-json-server.typicode.com/YanhangYANG/lab6'
+   
     // 其他的配置项
 });
 
