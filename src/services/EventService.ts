@@ -1,9 +1,10 @@
 import type { AxiosInstance, AxiosResponse } from "axios"
 import type { EventItem } from "@/type"
 import axios from "axios";
+import * as functions from 'firebase-functions';
 
 const apiClient: AxiosInstance = axios.create({
-    baseURL: import.meta.env.VITE_BACKEND_URL,
+    baseURL: functions.config().vite.backend_url,
     withCredentials: false, // This is the default
     // 其他的配置项
 });
